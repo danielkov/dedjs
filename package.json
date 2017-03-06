@@ -1,0 +1,15 @@
+{
+  "name": "dedjs",
+  "version": "0.1.0",
+  "description": "Find dead JS code with decent accuracy, locally.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "dedjs": "bin/test-module.js"
+  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
