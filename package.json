@@ -5,7 +5,7 @@
   "main": "dedjs.js",
   "bin": {
     "dedjs": "bin/dedjs.js"
-  }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
