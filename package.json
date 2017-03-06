@@ -4,7 +4,7 @@
   "description": "Find dead JS code with decent accuracy, locally.",
   "main": "dedjs.js",
   "bin": {
-    "dedjs": "bin/index.js"
+    "dedjs": "bin/dedjs.js"
   }
   "keywords": [],
   "author": "",
