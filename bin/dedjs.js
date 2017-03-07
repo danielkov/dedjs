@@ -44,6 +44,7 @@ const server = createServer((req, res) => {
       res.end(renderHome())
     }
   }
+  res.end()
 })
 
 .listen(process.argv.slice(2)[0] || 0)
