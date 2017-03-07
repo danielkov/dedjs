@@ -5,12 +5,12 @@ const { createServer } = require('http')
 const apps = {}
 
 const server = createServer((req, res) => {
+  res.setHeader('Access-Control-Allow-Origin', '*')
+  res.setHeader('Access-Control-Request-Method', '*')
+  res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET, POST')
+  res.setHeader('Access-Control-Allow-Headers', '*')
   if (req.method === 'POST') {
     res.setHeader('Content-Type', 'application/json')
-    res.setHeader('Access-Control-Allow-Origin', '*')
-    res.setHeader('Access-Control-Request-Method', '*')
-    res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET, POST')
-    res.setHeader('Access-Control-Allow-Headers', '*')
     let rBody = []
     let jBody
     req.on('data', (chunk) => {
