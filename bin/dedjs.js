@@ -8,7 +8,7 @@ const server = createServer((req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*')
   res.setHeader('Access-Control-Request-Method', '*')
   res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET, POST')
-  res.setHeader('Access-Control-Allow-Headers', '*')
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type')
   if (req.method === 'POST') {
     res.setHeader('Content-Type', 'application/json')
     let rBody = []
